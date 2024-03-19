@@ -13,4 +13,12 @@ Let me first briefly describe my context. I am simulating a pure shear sample, s
 
 **2) Getting the report files from Abaqus**
 
+**2.1) Getting the report files with nodal values of DMENER and SENER**
+
+<p align="justify">
+We will get 1 report file for each time step of the simulation. The report files will contain the nodes labels as the first column and the nodal values of DMENER and SENER as the 2nd and 3rd columns. My simulation has 100 time steps, so I don't want to get my report files manually, I will therefore use abaqus macros to get them. Go to File/Macro Manager and Create Macro in your work directory. Then go to Report/Field Output: in Step/Frames select Step 1, frame 0. In Variables select Position: Unique Nodal and check the DMENER and SENER boxes (note: you do have to request the outputs when you run your job, if not it will not be there, I assume you did). In Setup, name it Report_Files/0.rpt (create a folder Report_files in your work directory beforehand). Sort by Node Label (the rest can be left as default). Then hit ok, stop recording the macro. You should see a file 0.rpt appeared in your Report_Files folder: go ahead and delete it, what we are interested in is the macro (a python file, likely named abaqusMacro.py) that appeared in your work directory. If you followed the instructions, this file should look like mine (see Initial_Macro.py).
+
+  Now let's add a for loop in that file so we can get all time steps.
+</p>
+
 **3) Parsing the report files**
