@@ -10,15 +10,15 @@ Let me first briefly describe my context. I am simulating a pure shear sample, s
   
 - Make a plot to show the strain energy density psi(t*) (at a given time t*) as a color over the undeformed mesh.
 
-![screenshot](https://github.com/Guillaume-Lostec/Abaqus_Python_Plotting_2/blob/main/SED_undeformed.png)
+![screenshot](https://github.com/Guillaume-Lostec/Abaqus_Python_Plotting/blob/main/SED_undeformed.png)
   
 - Make a gif to show the time evolution of the strain energy density psi(t) as a color over the deformed mesh, as the crack opens and propagates.
 
-![screenshot](https://github.com/Guillaume-Lostec/Abaqus_Python_Plotting_2/blob/main/Animation_Psi.gif)
+![screenshot](https://github.com/Guillaume-Lostec/Abaqus_Python_Plotting/blob/main/Animation_Psi.gif)
 
 - Make a plot G(c) where G(t) is a given function of time c(t) is the crack length.
 
-![screenshot](https://github.com/Guillaume-Lostec/Abaqus_Python_Plotting_2/blob/main/Resistance_curve.png)
+![screenshot](https://github.com/Guillaume-Lostec/Abaqus_Python_Plotting/blob/main/Resistance_curve.png)
   
 Note it is possible to do this in Abaqus CAE by operating on the field outputs (see documentation). But I am interested in doing it in Python because ultimately I know I will want more freedom in creating my figures.
 </p>
