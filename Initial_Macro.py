@@ -7,7 +7,7 @@ import visualization
 import xyPlot
 import displayGroupOdbToolset as dgo
 session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=0)
-odb = session.odbs['C:\Users\Guillaume\OneDrive - UCB-O365\Documents\Research\Mullins_Damage_Fracture\Github_example\Job-1.odb']
+odb = session.odbs['Replace_by_relevant_path\Job-1.odb']
 session.writeFieldReport(fileName='0.rpt', append=ON, 
     sortItem='Node Label', odb=odb, step=0, frame=0, outputPosition=NODAL, 
     variable=(('LE', INTEGRATION_POINT, ((COMPONENT, 'LE11'), (COMPONENT, 
