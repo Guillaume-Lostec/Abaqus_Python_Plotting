@@ -6,7 +6,7 @@ After running a job in Abaqus, it is possible to produce report files in the ODB
 **1) What it does**
 
 <p align="justify">
-Let me first briefly describe my context. I am simulating a pure shear sample, stretched with constant rate. The material is hyperelastic (Neo Hookean) and Mullins effect has been added with the built-in (Ogden-Roxburgh) option in Abaqus. In the middle there is a layer of cohesive elements with traction-separation law to allow the crack to grow. More information about the model in this publication https://doi.org/10.1016/j.eml.2022.101726. I ran the simulation with the explicit solver and got an ODB file. Now, I want to:
+Let me first briefly describe my context. I am simulating a pure shear sample, stretched with constant rate. The material is hyperelastic (Neo Hookean) and Mullins effect has been added with the built-in (Ogden-Roxburgh) option in Abaqus. In the middle there is a layer of cohesive elements with traction-separation law to allow the crack to grow. More information about the model in this publication https://doi.org/10.1007/s10704-025-00884-w. I ran the simulation with the explicit solver and got an ODB file. Now, I want to:
   
 - Make a plot to show the strain energy density psi(t*) (at a given time t*) as a color over the undeformed mesh.
 
